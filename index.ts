@@ -22,7 +22,10 @@ import definePlugin from "@utils/types";
 export default definePlugin({
     name: "NeverPausePreviews",
     description: "Prevents in-call/PiP previews (screenshare, streams, etc) from pausing even if the client loses focus",
-    authors: [Devs.vappster],
+    authors: [{
+        name: "vappster",
+        id: 747192967311261748n
+    }],
     patches: [
         {   //picture-in-picture player patch
             find: "streamerPaused()",
